@@ -2363,3 +2363,30 @@ Extra small devices (portrait phones, less than 576px)
         line-height: 45px;
     }
 }
+
+.grid-box {
+    align-items: stretch;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid-item .cnt-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.grid-item .cnt-box .caption {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.grid-item .cnt-box .caption p {
+    flex: 1;
+}
