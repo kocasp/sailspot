@@ -2390,3 +2390,11 @@ Extra small devices (portrait phones, less than 576px)
 .grid-item .cnt-box .caption p {
     flex: 1;
 }
+
+.glide__slide .img-box:hover img {
+    opacity: 1;
+}
+
+.glide__slide .img-box:hover:before {
+    opacity: 0;
+}
