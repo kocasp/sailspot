@@ -7,26 +7,6 @@ use_maps: false
 
 <section class="section-base">
     <div class="container">
-        <div id="sailspot-map" style="width:100%;height:400px;"></div>
-        <script>
-            function initSailspotMap() {
-                var locations = [
-                    { lat: 49.816642262989056, lng: 19.545624400226004, title: "Przystań Leniówka – J. Mucharskie" },
-                    { lat: 49.441185983418144, lng: 20.290094086864727, title: "Przystań Vito – J. Czorsztyńskie" },
-                    { lat: 49.72733887169212, lng: 20.680832439493287, title: "Port Znamirowice – J. Rożnowskie" }
-                ];
-                var map = new google.maps.Map(document.getElementById("sailspot-map"), {
-                    zoom: 8,
-                    center: { lat: 49.75, lng: 20.15 },
-                    scrollwheel: false
-                });
-                var icon = "media/marker.png";
-                locations.forEach(function(loc) {
-                    new google.maps.Marker({ position: loc, map: map, title: loc.title, icon: icon });
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key={{ site.maps_api_key }}&callback=initSailspotMap" async defer></script>
         <hr class="space" />
         <div class="row">
             <div class="col-lg-8">
@@ -76,7 +56,7 @@ use_maps: false
                 </ul>
                 <hr class="space-sm" />
                 <div class="icon-links icon-social icon-links-grid social-colors-hover">
-                    <a class="facebook"><i class="icon-facebook"></i></a>
+                    <a href="https://facebook.com/sailspotpl" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
                     <a class="instagram"><i class="icon-instagram"></i></a>
                 </div>
                 <hr class="space-sm" />

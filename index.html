@@ -18,36 +18,86 @@ extra_scripts:
                 <h1 data-anima="fade-left" data-time="2000" class="text-lg text-uppercase text-black">Małopolskie Kursy Żeglarstwa</h1>
                 <hr class="space-sm" />
                 <hr class="space-xs" />
-                <table data-anima="fade-left" data-time="3000" class="table table-grid table-border align-left table-10">
+                <table data-anima="fade-left" data-time="3000" class="table table-grid table-border align-left table-10" id="weather-table">
                     <tbody>
                         <tr>
                             <td>
-                                <div class="counter counter-horizontal counter-icon">
-                                    <i class="im-cloud-sun text-md"></i>
-                                    <div>
-                                        <h3>Sezon żeglarski</h3>
+                                <div>
+                                    <h3 style="margin-bottom:6px;">J. Czorsztyńskie</h3>
+                                    <div style="display:flex;align-items:center;gap:16px;">
+                                        <span id="icon-czorsztyn" style="font-size:2.2rem;line-height:1;">–</span>
                                         <div class="value">
-                                            <span class="text-md">Maj</span>
-                                            <span>&ndash; Wrzesień</span>
+                                            <span class="text-md" id="temp-czorsztyn">–</span>
                                         </div>
                                     </div>
+                                    <div id="wind-czorsztyn" style="font-size:0.85rem;opacity:0.7;margin-top:4px;"></div>
                                 </div>
                             </td>
                             <td>
-                                <div class="counter counter-horizontal counter-icon">
-                                    <i class="im-clouds text-md"></i>
-                                    <div>
-                                        <h3>Średni wiatr</h3>
+                                <div>
+                                    <h3 style="margin-bottom:6px;">J. Rożnowskie</h3>
+                                    <div style="display:flex;align-items:center;gap:16px;">
+                                        <span id="icon-roznow" style="font-size:2.2rem;line-height:1;">–</span>
                                         <div class="value">
-                                            <span class="text-md" data-to="4" data-speed="2000">4</span>
-                                            <span>&ndash;5 B&nbsp;(Beaufort)</span>
+                                            <span class="text-md" id="temp-roznow">–</span>
                                         </div>
                                     </div>
+                                    <div id="wind-roznow" style="font-size:0.85rem;opacity:0.7;margin-top:4px;"></div>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <script>
+                (function() {
+                    function kmhToBft(kmh) {
+                        var ms = kmh / 3.6;
+                        if (ms < 0.3) return 0; if (ms < 1.6) return 1;
+                        if (ms < 3.4) return 2; if (ms < 5.5) return 3;
+                        if (ms < 8.0) return 4; if (ms < 10.8) return 5;
+                        if (ms < 13.9) return 6; if (ms < 17.2) return 7;
+                        return 8;
+                    }
+                    function getEmoji(code, cloud, temp) {
+                        code = parseInt(code);
+                        cloud = parseInt(cloud);
+                        temp = parseFloat(temp);
+                        // Burza
+                        if (code === 200 || code >= 386) return '⛈️';
+                        // Śnieg (tylko gdy temp ≤ 2°C, inaczej deszcz)
+                        var isSnow = (code >= 227 && code <= 230) ||
+                                     (code >= 323 && code <= 338) ||
+                                     (code === 350) ||
+                                     (code >= 368 && code <= 377);
+                        if (isSnow) return temp <= 2 ? '❄️' : '🌧️';
+                        // Deszcz
+                        if ((code >= 263 && code <= 321) || (code >= 353 && code <= 365)) return '🌧️';
+                        // Mżawka / możliwy deszcz
+                        if (code >= 176 && code <= 185) return '🌦️';
+                        // Mgła
+                        if (code >= 143 && code <= 260) return '🌫️';
+                        // Brak opadów – ikona zależy od zachmurzenia
+                        if (cloud >= 80) return '☁️';
+                        if (cloud >= 40) return '⛅';
+                        if (cloud >= 15) return '🌤️';
+                        return '☀️';
+                    }
+                    function fetchWeather(lat, lng, elIcon, elTemp, elWind) {
+                        fetch('https://wttr.in/' + lat + ',' + lng + '?format=j1')
+                            .then(function(r) { return r.json(); })
+                            .then(function(d) {
+                                var c = d.current_condition[0];
+                                var bft = kmhToBft(parseFloat(c.windspeedKmph));
+                                elIcon.textContent = getEmoji(c.weatherCode, c.cloudcover, c.temp_C);
+                                elTemp.textContent = c.temp_C + '°C';
+                                elWind.textContent = (parseFloat(c.windspeedKmph) / 3.6).toFixed(1) + ' m/s (B' + bft + ')';
+                            })
+                            .catch(function() { elTemp.textContent = 'brak danych'; });
+                    }
+                    fetchWeather(49.441, 20.290, document.getElementById('icon-czorsztyn'), document.getElementById('temp-czorsztyn'), document.getElementById('wind-czorsztyn'));
+                    fetchWeather(49.727, 20.681, document.getElementById('icon-roznow'), document.getElementById('temp-roznow'), document.getElementById('wind-roznow'));
+                })();
+                </script>
                 <hr class="space-sm" />
                 <hr class="space-xs" />
                 <a href="treks.html" class="btn btn-sm btn-circle" data-anima="fade-left" data-time="3000">Nasze kursy</a>
@@ -157,15 +207,29 @@ extra_scripts:
                 </p>
             </div>
             <div class="col-lg-4">
-                <ul class="text-list text-list-line line-4">
-                    <li><b>Działamy od</b><hr /><p>2010</p></li>
-                    <li><b>Akweny</b><hr /><p>J. Rożnowskie, Mucharskie, Czorsztyńskie</p></li>
-                    <li><b>Email</b><hr /><p>{{ site.email }}</p></li>
-                    <li><b>Telefon</b><hr /><p>{{ site.phone }}</p></li>
-                    <li><b>Instruktorzy</b><hr /><p>6 uprawnionych instruktorów PZŻ</p></li>
-                    <li><b>Rodzaje kursów</b><hr /><p>4 typy kursów</p></li>
-                    <li><b>Cena od</b><hr /><p>od 450 zł</p></li>
-                </ul>
+                <div class="icon-box icon-box-left">
+                    <i class="im-geo2"></i>
+                    <div class="caption">
+                        <h3>Trzy jeziora</h3>
+                        <p>Rożnowskie, Mucharskie i Czorsztyńskie – każde z innym charakterem i warunkami do nauki.</p>
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <div class="icon-box icon-box-left">
+                    <i class="im-phone-2"></i>
+                    <div class="caption">
+                        <h3>{{ site.phone }}</h3>
+                        <p>Zadzwoń – odpowiemy na wszystkie pytania i pomożemy wybrać odpowiedni kurs.</p>
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <div class="icon-box icon-box-left">
+                    <i class="im-email"></i>
+                    <div class="caption">
+                        <h3>{{ site.email }}</h3>
+                        <p>Napisz do nas w każdej chwili – odpowiadamy w ciągu 24 godzin.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
