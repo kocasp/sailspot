@@ -1,295 +1,199 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kursy Żeglarskie | Sailspot – Szkoła Żeglarska</title>
-    <meta name="description" content="Oferujemy kursy żeglarskie na jeziorach Małopolski: kursy patentowe, doskonalące, weekendowe i obozy dla dzieci. Sprawdź naszą ofertę!">
-    <script src="themekit/scripts/jquery.min.js"></script>
-    <script src="themekit/scripts/main.js"></script>
-    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="themekit/css/style.css">
-    <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="themekit/css/media-box.css">
-    <link rel="stylesheet" href="skin.css">
-    <link rel="icon" href="media/favicon.png">
-</head>
-<body class="page-main">
-    <div id="preloader"></div>
-    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
-        <div class="container">
-            <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                </a>
-            </div>
-            <i class="menu-btn"></i>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li class="dropdown">
-                        <a href="#">O nas</a>
-                        <ul>
-                            <li><a href="about.html">O szkole</a></li>
-                            <li><a href="team.html">Kadra</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="treks.html">Kursy</a>
-                        <ul>
-                            <li><a href="treks.html">Wszystkie kursy</a></li>
-                            <li><a href="treks-single.html">Kurs żeglarski – patent</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Informacje</a>
-                        <ul>
-                            <li><a href="prices.html">Cennik</a></li>
-                            <li><a href="events.html">Terminy</a></li>
-                            <li><a href="food.html">Wyżywienie</a></li>
-                            <li><a href="shelters.html">Akweny</a></li>
-                            <li><a href="gallery.html">Galeria</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Kontakt</a></li>
+---
+layout: default
+title: "Kursy Żeglarskie | Sailspot – Szkoła Żeglarska"
+description: "Oferujemy kursy żeglarskie na jeziorach Małopolski: kursy patentowe, doskonalące, weekendowe i obozy dla dzieci. Sprawdź naszą ofertę!"
+page_header:
+  image: "media/kursy.jpg"
+  h1: "Kursy Żeglarskie"
+  h2: "Wiatr w żaglach – zacznij swoją przygodę z żeglarstwem"
+breadcrumbs:
+  - title: "Strona główna"
+    url: "index.html"
+  - title: "Kursy"
+extra_scripts:
+  - isotope.min.js
+---
+
+<section class="section-base section-color">
+    <div class="container">
+        <div class="maso-list gap-30" data-columns="3" data-columns-lg="2" data-columns-sm="1">
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Filtruj</span></div>
+                <ul>
+                    <li class="active"><a data-filter="maso-item" href="#">Wszystkie</a></li>
+                    <li><a data-filter="cat-1" href="#">Patentowe</a></li>
+                    <li><a data-filter="cat-2" href="#">Doskonalące</a></li>
+                    <li><a data-filter="cat-3" href="#">Weekendowe</a></li>
+                    <li><a data-filter="cat-4" href="#">Dla młodzieży</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="0" data-image-src="media/kursy.jpg" data-offset="0">
-        <div class="container">
-            <h1>Kursy Żeglarskie</h1>
-            <h2>Wiatr w żaglach – zacznij swoją przygodę z żeglarstwem</h2>
-            <ol class="breadcrumb">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="#">Kursy</a></li>
-            </ol>
-        </div>
-    </header>
-    <main>
-        <section class="section-base section-color">
-            <div class="container">
-                <div class="maso-list gap-30" data-columns="3" data-columns-lg="2" data-columns-sm="1">
-                    <div class="menu-inner">
-                        <div><i class="menu-btn"></i><span>Filtruj</span></div>
-                        <ul>
-                            <li class="active"><a data-filter="maso-item" href="#">Wszystkie</a></li>
-                            <li><a data-filter="cat-1" href="#">Patentowe</a></li>
-                            <li><a data-filter="cat-2" href="#">Doskonalące</a></li>
-                            <li><a data-filter="cat-3" href="#">Weekendowe</a></li>
-                            <li><a data-filter="cat-4" href="#">Dla młodzieży</a></li>
-                        </ul>
-                    </div>
-                    <div class="maso-box">
-                        <div class="maso-item cat-1">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 1 490 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="media/zj.jpg" alt="Kurs na patent żeglarza jachtowego" /></a>
-                                <div class="caption">
-                                    <h2>Kurs na patent Żeglarza Jachtowego</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>5–7</span></div>
-                                        <div><span>Grupa</span><span>max 8</span></div>
-                                        <div><span>Poziom</span><span>Początkujący</span></div>
-                                    </div>
-                                    <p>
-                                        Kompleksowy kurs przygotowujący do egzaminu PZŻ na patent Żeglarza Jachtowego. Obejmuje teorię i praktykę na wodzie, żeglowanie w dzień i wieczorami.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Mucharskie / Czorsztyńskie
-                                    </div>
-                                </div>
+            <div class="maso-box">
+                <div class="maso-item cat-1">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 1 490 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="media/zj.jpg" alt="Kurs na patent żeglarza jachtowego" /></a>
+                        <div class="caption">
+                            <h2>Kurs na patent Żeglarza Jachtowego</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>5–7</span></div>
+                                <div><span>Grupa</span><span>max 8</span></div>
+                                <div><span>Poziom</span><span>Początkujący</span></div>
                             </div>
-                        </div>
-                        <div class="maso-item cat-2">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 1 290 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs doskonalący żeglarstwa" /></a>
-                                <div class="caption">
-                                    <h2>Kurs Doskonalący Żeglarstwa</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>5</span></div>
-                                        <div><span>Grupa</span><span>max 6</span></div>
-                                        <div><span>Poziom</span><span>Średniozaawansowany</span></div>
-                                    </div>
-                                    <p>
-                                        Dla posiadaczy patentu żeglarza jachtowego. Zaawansowane manewry portowe, planowanie trasy, żeglowanie w trudnych warunkach atmosferycznych.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="maso-item cat-3">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 450 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs weekendowy dla początkujących" /></a>
-                                <div class="caption">
-                                    <h2>Kurs Weekendowy dla Początkujących</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>2</span></div>
-                                        <div><span>Grupa</span><span>max 6</span></div>
-                                        <div><span>Poziom</span><span>Absolutny początek</span></div>
-                                    </div>
-                                    <p>
-                                        Dwa dni pełne wiatru i przygody. Poznasz obsługę jachtu, podstawowe węzły żeglarskie i pierwsze manewry. Idealne na aktywny weekend!
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Mucharskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="maso-item cat-4">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 990 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Obóz żeglarski dla dzieci i młodzieży" /></a>
-                                <div class="caption">
-                                    <h2>Obóz Żeglarski dla Dzieci i Młodzieży</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>7</span></div>
-                                        <div><span>Wiek</span><span>10–17 lat</span></div>
-                                        <div><span>Poziom</span><span>Początkujący</span></div>
-                                    </div>
-                                    <p>
-                                        Tygodniowy obóz żeglarski z pełną opieką wychowawczą. Nauka żeglowania, gry terenowe, ogniska przy jeziorze i niezapomniane wspomnienia.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Czorsztyńskie / Rożnowskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="maso-item cat-1 cat-2">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 1 990 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs na patent sternika jachtowego" /></a>
-                                <div class="caption">
-                                    <h2>Kurs na patent Sternika Jachtowego</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>7–10</span></div>
-                                        <div><span>Grupa</span><span>max 6</span></div>
-                                        <div><span>Poziom</span><span>Zaawansowany</span></div>
-                                    </div>
-                                    <p>
-                                        Wymagany patent żeglarza jachtowego. Kurs przygotowuje do egzaminu PZŻ na wyższy stopień żeglarski – sternika jachtowego.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="maso-item cat-3">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 590 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Weekendowy kurs motorowodny" /></a>
-                                <div class="caption">
-                                    <h2>Kurs Motorowodny – Weekendowy</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>2</span></div>
-                                        <div><span>Grupa</span><span>max 4</span></div>
-                                        <div><span>Poziom</span><span>Początkujący</span></div>
-                                    </div>
-                                    <p>
-                                        Kurs przygotowujący do patentu sternika motorowodnego. Teoria i praktyka na motorówce – szybko, bezpiecznie i z głową.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Mucharskie
-                                    </div>
-                                </div>
+                            <p>
+                                Kompleksowy kurs przygotowujący do egzaminu PZŻ na patent Żeglarza Jachtowego. Obejmuje teorię i praktykę na wodzie, żeglowanie w dzień i wieczorami.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Mucharskie / Czorsztyńskie
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr class="space" />
-            </div>
-        </section>
-        <section class="section-base section-call">
-            <div class="container">
-                <div class="cnt-box cnt-call">
-                    <i class="im-paper-plane"></i>
-                    <div class="caption">
-                        <h2>Rezerwacja i kontakt</h2>
-                        <p>
-                            Chcesz zapisać się na kurs lub masz pytania dotyczące naszej oferty? Skontaktuj się z nami – odpowiadamy w ciągu 24 godzin!
-                        </p>
-                        <a href="contacts.html" class="btn btn-xs">Napisz do nas</a>
+                <div class="maso-item cat-2">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 1 290 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs doskonalący żeglarstwa" /></a>
+                        <div class="caption">
+                            <h2>Kurs Doskonalący Żeglarstwa</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>5</span></div>
+                                <div><span>Grupa</span><span>max 6</span></div>
+                                <div><span>Poziom</span><span>Średniozaawansowany</span></div>
+                            </div>
+                            <p>
+                                Dla posiadaczy patentu żeglarza jachtowego. Zaawansowane manewry portowe, planowanie trasy, żeglowanie w trudnych warunkach atmosferycznych.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Czorsztyńskie
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-thumb"></i>
-                            <div class="caption">
-                                <h3>Certyfikowani instruktorzy</h3>
-                                <p>Wszystkie szkolenia prowadzą instruktorzy z uprawnieniami PZŻ</p>
+                <div class="maso-item cat-3">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 450 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs weekendowy dla początkujących" /></a>
+                        <div class="caption">
+                            <h2>Kurs Weekendowy dla Początkujących</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>2</span></div>
+                                <div><span>Grupa</span><span>max 6</span></div>
+                                <div><span>Poziom</span><span>Absolutny początek</span></div>
+                            </div>
+                            <p>
+                                Dwa dni pełne wiatru i przygody. Poznasz obsługę jachtu, podstawowe węzły żeglarskie i pierwsze manewry. Idealne na aktywny weekend!
+                            </p>
+                            <div class="bottom-info">
+                                J. Mucharskie / Czorsztyńskie
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-icq"></i>
-                            <div class="caption">
-                                <h3>Małe grupy</h3>
-                                <p>Maksymalnie 6–8 osób w grupie – masz gwarancję indywidualnego podejścia</p>
+                </div>
+                <div class="maso-item cat-4">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 990 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Obóz żeglarski dla dzieci i młodzieży" /></a>
+                        <div class="caption">
+                            <h2>Obóz Żeglarski dla Dzieci i Młodzieży</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>7</span></div>
+                                <div><span>Wiek</span><span>10–17 lat</span></div>
+                                <div><span>Poziom</span><span>Początkujący</span></div>
+                            </div>
+                            <p>
+                                Tygodniowy obóz żeglarski z pełną opieką wychowawczą. Nauka żeglowania, gry terenowe, ogniska przy jeziorze i niezapomniane wspomnienia.
+                            </p>
+                            <div class="bottom-info">
+                                J. Czorsztyńskie / Rożnowskie
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-forest"></i>
-                            <div class="caption">
-                                <h3>Ognisko w cenie</h3>
-                                <p>Każdy kurs zawiera wieczorne ognisko i kolację przy brzegu jeziora</p>
+                </div>
+                <div class="maso-item cat-1 cat-2">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 1 990 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Kurs na patent sternika jachtowego" /></a>
+                        <div class="caption">
+                            <h2>Kurs na patent Sternika Jachtowego</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>7–10</span></div>
+                                <div><span>Grupa</span><span>max 6</span></div>
+                                <div><span>Poziom</span><span>Zaawansowany</span></div>
+                            </div>
+                            <p>
+                                Wymagany patent żeglarza jachtowego. Kurs przygotowuje do egzaminu PZŻ na wyższy stopień żeglarski – sternika jachtowego.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Czorsztyńskie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maso-item cat-3">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 590 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="https://placehold.co/800x500" alt="Weekendowy kurs motorowodny" /></a>
+                        <div class="caption">
+                            <h2>Kurs Motorowodny – Weekendowy</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>2</span></div>
+                                <div><span>Grupa</span><span>max 4</span></div>
+                                <div><span>Poziom</span><span>Początkujący</span></div>
+                            </div>
+                            <p>
+                                Kurs przygotowujący do patentu sternika motorowodnego. Teoria i praktyka na motorówce – szybko, bezpiecznie i z głową.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Mucharskie
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+        <hr class="space" />
+    </div>
+</section>
 
-    <footer class="light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Sailspot</h3>
-                    <p>Szkoła Żeglarska Sailspot – nauka żeglarstwa na pięknych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Kontakt</h3>
-                    <ul class="icon-list icon-line">
-                        <li>Małopolska, Polska</li>
-                        <li>info@sailspot.pl</li>
-                        <li>+48 123 456 789</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a class="facebook"><i class="icon-facebook"></i></a>
-                        <a class="instagram"><i class="icon-instagram"></i></a>
+<section class="section-base section-call">
+    <div class="container">
+        <div class="cnt-box cnt-call">
+            <i class="im-paper-plane"></i>
+            <div class="caption">
+                <h2>Rezerwacja i kontakt</h2>
+                <p>
+                    Chcesz zapisać się na kurs lub masz pytania dotyczące naszej oferty? Skontaktuj się z nami – odpowiadamy w ciągu 24 godzin!
+                </p>
+                <a href="contacts.html" class="btn btn-xs">Napisz do nas</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-thumb"></i>
+                    <div class="caption">
+                        <h3>Certyfikowani instruktorzy</h3>
+                        <p>Wszystkie szkolenia prowadzą instruktorzy z uprawnieniami PZŻ</p>
                     </div>
-                    <hr class="space-sm" />
-                    <p>Śledź nas na Facebooku i Instagramie, aby być na bieżąco z terminami kursów i relacjami z rejsów.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-icq"></i>
+                    <div class="caption">
+                        <h3>Małe grupy</h3>
+                        <p>Maksymalnie 6–8 osób w grupie – masz gwarancję indywidualnego podejścia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-forest"></i>
+                    <div class="caption">
+                        <h3>Ognisko w cenie</h3>
+                        <p>Każdy kurs zawiera wieczorne ognisko i kolację przy brzegu jeziora</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bar">
-            <div class="container">
-                <span>© 2025 Sailspot – Szkoła Żeglarska</span>
-                <span><a href="contacts.html">Kontakt</a> | <a href="#">Polityka prywatności</a></span>
-            </div>
-        </div>
-        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
-        <script src="themekit/scripts/parallax.min.js"></script>
-        <script src="themekit/scripts/isotope.min.js"></script>
-    </footer>
-</body>
-</html>
+    </div>
+</section>

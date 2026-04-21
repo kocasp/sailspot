@@ -1,0 +1,43 @@
+<footer class="light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Sailspot</h3>
+                <p>Szkoła Żeglarska Sailspot – nauka żeglarstwa na pięknych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Kontakt</h3>
+                <ul class="icon-list icon-line">
+                    <li>{{ site.address }}</li>
+                    <li>{{ site.email }}</li>
+                    <li>{{ site.phone }}</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="icon-links icon-social icon-links-grid social-colors">
+                    <a class="facebook"><i class="icon-facebook"></i></a>
+                    <a class="instagram"><i class="icon-instagram"></i></a>
+                </div>
+                <hr class="space-sm" />
+                <p>Śledź nas na Facebooku i Instagramie, aby być na bieżąco z terminami kursów i relacjami z rejsów.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <div class="container">
+            <span>© {{ site.copyright_year }} Sailspot – Szkoła Żeglarska</span>
+            <span><a href="contacts.html">Kontakt</a> | <a href="#">Polityka prywatności</a></span>
+        </div>
+    </div>
+    <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+    <script src="themekit/scripts/parallax.min.js"></script>
+    <script src="themekit/scripts/glide.min.js"></script>
+    <script src="themekit/scripts/magnific-popup.min.js"></script>
+    {% for script in page.extra_scripts %}
+    <script src="themekit/scripts/{{ script }}"></script>
+    {% endfor %}
+    {% if page.use_maps %}
+    <script src="themekit/scripts/maps.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ site.maps_api_key }}"></script>
+    {% endif %}
+</footer>

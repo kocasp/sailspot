@@ -1,221 +1,122 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kadra Instruktorska | Sailspot – Szkoła Żeglarska</title>
-    <meta name="description" content="Poznaj kadrę instruktorską Szkoły Żeglarskiej Sailspot. Certyfikowani instruktorzy PZŻ z wieloletnim doświadczeniem na wodach Małopolski.">
-    <script src="themekit/scripts/jquery.min.js"></script>
-    <script src="themekit/scripts/main.js"></script>
-    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="themekit/css/style.css">
-    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
-    <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="skin.css">
-    <link rel="icon" href="media/favicon.png">
-</head>
-<body class="page-main">
-    <div id="preloader"></div>
-    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
-        <div class="container">
-            <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                </a>
-            </div>
-            <i class="menu-btn"></i>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li class="dropdown">
-                        <a href="#">O nas</a>
-                        <ul>
-                            <li><a href="about.html">O szkole</a></li>
-                            <li><a href="team.html">Kadra</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="treks.html">Kursy</a>
-                        <ul>
-                            <li><a href="treks.html">Wszystkie kursy</a></li>
-                            <li><a href="treks-single.html">Kurs żeglarski – patent</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Informacje</a>
-                        <ul>
-                            <li><a href="prices.html">Cennik</a></li>
-                            <li><a href="events.html">Terminy</a></li>
-                            <li><a href="food.html">Wyżywienie</a></li>
-                            <li><a href="shelters.html">Akweny</a></li>
-                            <li><a href="gallery.html">Galeria</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="0" data-image-src="https://placehold.co/1920x1080" data-offset="0">
-        <div class="container">
-            <h1>Nasza kadra</h1>
-            <h2>Doświadczeni instruktorzy z pasją do żeglowania</h2>
-            <ol class="breadcrumb">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="#">O nas</a></li>
-                <li><a href="#">Kadra</a></li>
-            </ol>
-        </div>
-    </header>
-    <main>
-        <section class="section-base">
-            <div class="container">
-                <div class="grid-list gap-60" data-columns="2" data-columns-sm="1" data-gap="60">
-                    <div class="grid-box">
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-side">
-                                <a href="#" class="img-box"><img src="roberts.JPG" alt="Robert" /></a>
-                                <div class="caption">
-                                    <h2>Robert</h2>
-                                    <p>
-                                        Instruktor Żeglarstwa, JSM. Uczy żeglarstwa od ponad 20 lat – z pod jego skrzydeł wyszły już setki żeglarzy. Doświadczenie i pasja, którą zaraża każdego kursanta.
-                                    </p>
-                                    <a class="btn-text lightbox" data-lightbox-anima="fade-left" href="#user-robert">O mnie</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-side">
-                                <a href="#" class="img-box"><img src="konrads.JPG" alt="Konrad" /></a>
-                                <div class="caption">
-                                    <h2>Konrad</h2>
-                                    <p>
-                                        Instruktor Żeglarstwa, Ratownik, Nurek OWD. Łączy żeglarstwo z pasją do nurkowania i bezpieczeństwa na wodzie.
-                                    </p>
-                                    <a class="btn-text lightbox" data-lightbox-anima="fade-left" href="#user-konrad">O mnie</a>
-                                </div>
-                            </div>
+---
+layout: default
+title: "Kadra Instruktorska | Sailspot – Szkoła Żeglarska"
+description: "Poznaj kadrę instruktorską Szkoły Żeglarskiej Sailspot. Certyfikowani instruktorzy PZŻ z wieloletnim doświadczeniem na wodach Małopolski."
+page_header:
+  image: "https://placehold.co/1920x1080"
+  h1: "Nasza kadra"
+  h2: "Doświadczeni instruktorzy z pasją do żeglowania"
+breadcrumbs:
+  - title: "Strona główna"
+    url: "index.html"
+  - title: "O nas"
+  - title: "Kadra"
+extra_scripts:
+  - imagesloaded.min.js
+---
+
+<section class="section-base">
+    <div class="container">
+        <div class="grid-list gap-60" data-columns="2" data-columns-sm="1" data-gap="60">
+            <div class="grid-box">
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-side">
+                        <a href="#" class="img-box"><img src="roberts.JPG" alt="Robert" /></a>
+                        <div class="caption">
+                            <h2>Robert</h2>
+                            <p>
+                                Instruktor Żeglarstwa, JSM. Uczy żeglarstwa od ponad 20 lat – z pod jego skrzydeł wyszły już setki żeglarzy. Doświadczenie i pasja, którą zaraża każdego kursanta.
+                            </p>
+                            <a class="btn-text lightbox" data-lightbox-anima="fade-left" href="#user-robert">O mnie</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Lightbox profiles -->
-                <div id="user-robert" class="box-lightbox-md light">
-                    <h2>Robert</h2>
-                    <h4>Instruktor Żeglarstwa · JSM</h4>
-                    <hr class="space-sm" />
-                    <p>
-                        Robert uczy żeglarstwa od ponad 20 lat. Przez ten czas z pod jego skrzydeł wyszły setki żeglarzy – od zupełnych początkujących po zaawansowanych sterników. Jego doświadczenie, cierpliwość i nieustające zamiłowanie do wody sprawiają, że każdy kurs to nie tylko nauka, ale i niezapomniana przygoda.
-                    </p>
-                    <hr class="space-sm" />
-                    <span class="icon-links icon-links-grid icon-social social-colors">
-                        <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
-                        <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
-                    </span>
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-side">
+                        <a href="#" class="img-box"><img src="konrads.JPG" alt="Konrad" /></a>
+                        <div class="caption">
+                            <h2>Konrad</h2>
+                            <p>
+                                Instruktor Żeglarstwa, Ratownik, Nurek OWD. Łączy żeglarstwo z pasją do nurkowania i bezpieczeństwa na wodzie.
+                            </p>
+                            <a class="btn-text lightbox" data-lightbox-anima="fade-left" href="#user-konrad">O mnie</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="user-konrad" class="box-lightbox-md light">
-                    <h2>Konrad</h2>
-                    <h4>Instruktor Żeglarstwa · Ratownik · Nurek OWD</h4>
-                    <hr class="space-sm" />
-                    <p>
-                        Konrad to instruktor żeglarstwa z certyfikatem ratownika i nurka OWD. Swoją wszechstronność wykorzystuje zarówno na kursach żeglarskich, jak i podczas szkoleń z bezpieczeństwa na wodzie. Pasja do żeglarstwa łączy się u niego z zamiłowaniem do eksploracji podwodnego świata.
-                    </p>
-                    <hr class="space-sm" />
-                    <span class="icon-links icon-links-grid icon-social social-colors">
-                        <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
-                        <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
-                    </span>
-                </div>
-
-                <hr class="space" />
             </div>
-        </section>
+        </div>
 
-        <section class="section-base section-color section-call">
-            <div class="container">
-                <div class="cnt-box cnt-call">
-                    <i class="im-paper-plane"></i>
+        <div id="user-robert" class="box-lightbox-md light">
+            <h2>Robert</h2>
+            <h4>Instruktor Żeglarstwa · JSM</h4>
+            <hr class="space-sm" />
+            <p>
+                Robert uczy żeglarstwa od ponad 20 lat. Przez ten czas z pod jego skrzydeł wyszły setki żeglarzy – od zupełnych początkujących po zaawansowanych sterników. Jego doświadczenie, cierpliwość i nieustające zamiłowanie do wody sprawiają, że każdy kurs to nie tylko nauka, ale i niezapomniana przygoda.
+            </p>
+            <hr class="space-sm" />
+            <span class="icon-links icon-links-grid icon-social social-colors">
+                <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
+                <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
+            </span>
+        </div>
+        <div id="user-konrad" class="box-lightbox-md light">
+            <h2>Konrad</h2>
+            <h4>Instruktor Żeglarstwa · Ratownik · Nurek OWD</h4>
+            <hr class="space-sm" />
+            <p>
+                Konrad to instruktor żeglarstwa z certyfikatem ratownika i nurka OWD. Swoją wszechstronność wykorzystuje zarówno na kursach żeglarskich, jak i podczas szkoleń z bezpieczeństwa na wodzie. Pasja do żeglarstwa łączy się u niego z zamiłowaniem do eksploracji podwodnego świata.
+            </p>
+            <hr class="space-sm" />
+            <span class="icon-links icon-links-grid icon-social social-colors">
+                <a href="#" target="_blank" class="facebook"><i class="icon-facebook"></i></a>
+                <a href="#" target="_blank" class="instagram"><i class="icon-instagram"></i></a>
+            </span>
+        </div>
+
+        <hr class="space" />
+    </div>
+</section>
+
+<section class="section-base section-color section-call">
+    <div class="container">
+        <div class="cnt-box cnt-call">
+            <i class="im-paper-plane"></i>
+            <div class="caption">
+                <h2>Dołącz do naszego zespołu</h2>
+                <p>
+                    Jesteś instruktorem PZŻ z pasją do żeglowania i pracy z ludźmi? Poszukujemy instruktorów na sezon 2025. Odezwij się!
+                </p>
+                <a href="contacts.html" class="btn btn-xs">Napisz do nas</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-air-balloon"></i>
                     <div class="caption">
-                        <h2>Dołącz do naszego zespołu</h2>
-                        <p>
-                            Jesteś instruktorem PZŻ z pasją do żeglowania i pracy z ludźmi? Poszukujemy instruktorów na sezon 2025. Odezwij się!
-                        </p>
-                        <a href="contacts.html" class="btn btn-xs">Napisz do nas</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-air-balloon"></i>
-                            <div class="caption">
-                                <h3>Praca marzeń</h3>
-                                <p>Każdy dzień to inna przygoda – na pięknych jeziorach Małopolski, z fajnymi ludźmi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-bar-chart2"></i>
-                            <div class="caption">
-                                <h3>Rozwój zawodowy</h3>
-                                <p>Finansujemy kursy dokształcające i umożliwiamy awans w strukturach PZŻ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="icon-box icon-box-left">
-                            <i class="im-bee"></i>
-                            <div class="caption">
-                                <h3>Wspaniały zespół</h3>
-                                <p>Pracujemy razem od lat – dobra atmosfera to jeden z naszych największych atutów</p>
-                            </div>
-                        </div>
+                        <h3>Praca marzeń</h3>
+                        <p>Każdy dzień to inna przygoda – na pięknych jeziorach Małopolski, z fajnymi ludźmi</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Sailspot</h3>
-                    <p>Szkoła Żeglarska Sailspot – nauka żeglarstwa na pięknych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Kontakt</h3>
-                    <ul class="icon-list icon-line">
-                        <li>Małopolska, Polska</li>
-                        <li>info@sailspot.pl</li>
-                        <li>+48 123 456 789</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a class="facebook"><i class="icon-facebook"></i></a>
-                        <a class="instagram"><i class="icon-instagram"></i></a>
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-bar-chart2"></i>
+                    <div class="caption">
+                        <h3>Rozwój zawodowy</h3>
+                        <p>Finansujemy kursy dokształcające i umożliwiamy awans w strukturach PZŻ</p>
                     </div>
-                    <hr class="space-sm" />
-                    <p>Śledź nas na Facebooku i Instagramie, aby być na bieżąco z terminami kursów i relacjami z rejsów.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="icon-box icon-box-left">
+                    <i class="im-bee"></i>
+                    <div class="caption">
+                        <h3>Wspaniały zespół</h3>
+                        <p>Pracujemy razem od lat – dobra atmosfera to jeden z naszych największych atutów</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bar">
-            <div class="container">
-                <span>© 2025 Sailspot – Szkoła Żeglarska</span>
-                <span><a href="contacts.html">Kontakt</a> | <a href="#">Polityka prywatności</a></span>
-            </div>
-        </div>
-        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
-        <script src="themekit/scripts/parallax.min.js"></script>
-        <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
-    </footer>
-</body>
-</html>
+    </div>
+</section>

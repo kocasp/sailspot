@@ -1,0 +1,53 @@
+{% if page.nav_transparent %}
+<nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
+{% else %}
+<nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
+{% endif %}
+    <div class="container">
+        <div class="menu-brand">
+            <a href="index.html">
+                {% if page.nav_transparent %}
+                <img class="logo-default scroll-hide" src="{{ site.logo_transparent }}" alt="Sailspot logo" />
+                <img class="logo-retina scroll-hide" src="{{ site.logo_transparent }}" alt="Sailspot logo" />
+                {% else %}
+                <img class="logo-default scroll-hide" src="{{ site.logo_default }}" alt="Sailspot logo" />
+                <img class="logo-retina scroll-hide" src="{{ site.logo_default }}" alt="Sailspot logo" />
+                {% endif %}
+                <img class="logo-default scroll-show" src="{{ site.logo_scrolled }}" alt="Sailspot logo" />
+                <img class="logo-retina scroll-show" src="{{ site.logo_scrolled }}" alt="Sailspot logo" />
+            </a>
+        </div>
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul id="main-menu">
+                <li><a href="index.html">Strona główna</a></li>
+                <li class="dropdown">
+                    <a href="#">O nas</a>
+                    <ul>
+                        <li><a href="about.html">O szkole</a></li>
+                        <li><a href="team.html">Kadra</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="treks.html">Kursy</a>
+                    <ul>
+                        <li><a href="treks.html">Wszystkie kursy</a></li>
+                        <li><a href="treks-single.html">Kurs żeglarski – patent</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Informacje</a>
+                    <ul>
+                        <li><a href="prices.html">Cennik</a></li>
+                        <li><a href="events.html">Terminy</a></li>
+                        <li><a href="food.html">Wyżywienie</a></li>
+                        <li><a href="shelters.html">Akweny</a></li>
+                        <li><a href="gallery.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

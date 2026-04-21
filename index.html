@@ -1,459 +1,360 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sailspot – Szkoła Żeglarska | Kursy Żeglarskie Małopolska</title>
-    <meta name="description" content="Szkoła Żeglarska Sailspot – kursy żeglarskie na jeziorach Rożnowskim, Mucharskim i Czorsztyńskim. Patent żeglarza jachtowego, ognisko, kolacja, niezapomniane wakacje.">
-    <script src="themekit/scripts/jquery.min.js"></script>
-    <script src="themekit/scripts/main.js"></script>
-    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="themekit/css/style.css">
-    <link rel="stylesheet" href="themekit/css/glide.css">
-    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
-    <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="themekit/css/media-box.css">
-    <link rel="stylesheet" href="themekit/css/social.css">
-    <link rel="stylesheet" href="skin.css">
-    <link rel="icon" href="media/favicon.png">
-</head>
-<body class="page-main">
-    <div id="preloader"></div>
-    <nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
-        <div class="container">
-            <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/sailspot_outlines_horizontal.png" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-hide" src="media/sailspot_outlines_horizontal.png" alt="Sailspot logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                </a>
-            </div>
-            <i class="menu-btn"></i>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li class="dropdown">
-                        <a href="#">O nas</a>
-                        <ul>
-                            <li><a href="about.html">O szkole</a></li>
-                            <li><a href="team.html">Kadra</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="treks.html">Kursy</a>
-                        <ul>
-                            <li><a href="treks.html">Wszystkie kursy</a></li>
-                            <li><a href="treks-single.html">Kurs żeglarski – patent</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Informacje</a>
-                        <ul>
-                            <li><a href="prices.html">Cennik</a></li>
-                            <li><a href="events.html">Terminy</a></li>
-                            <li><a href="food.html">Wyżywienie</a></li>
-                            <li><a href="shelters.html">Akweny</a></li>
-                            <li><a href="gallery.html">Galeria</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Kontakt</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section class="section-image light ken-burn-center" data-parallax="scroll" data-image-src="media/b1.webp">
-            <div class="container">
-                <hr class="space-lg" />
+---
+layout: default
+title: "Sailspot – Szkoła Żeglarska | Kursy Żeglarskie Małopolska"
+description: "Szkoła Żeglarska Sailspot – kursy żeglarskie na jeziorach Rożnowskim, Mucharskim i Czorsztyńskim. Patent żeglarza jachtowego, ognisko, kolacja, niezapomniane wakacje."
+nav_transparent: true
+extra_scripts:
+  - progress.js
+  - pagination.min.js
+  - contact-form/contact-form.js
+---
+
+<section class="section-image light ken-burn-center" data-parallax="scroll" data-image-src="media/b1.webp">
+    <div class="container">
+        <hr class="space-lg" />
+        <hr class="space-sm" />
+        <div class="row justify-content-around">
+            <div class="col-lg-6">
+                <h1 data-anima="fade-left" data-time="2000" class="text-lg text-uppercase text-black">Małopolskie Kursy Żeglarstwa</h1>
                 <hr class="space-sm" />
-                <div class="row justify-content-around">
-                    <div class="col-lg-6">
-                        <h1 data-anima="fade-left" data-time="2000" class="text-lg text-uppercase text-black">Małopolskie Kursy Żeglarstwa</h1>
-                        <hr class="space-sm" />
-                        <hr class="space-xs" />
-                        <table data-anima="fade-left" data-time="3000" class="table table-grid table-border align-left table-10">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="counter counter-horizontal counter-icon">
-                                            <i class="im-cloud-sun text-md"></i>
-                                            <div>
-                                                <h3>Sezon żeglarski</h3>
-                                                <div class="value">
-                                                    <span class="text-md">Maj</span>
-                                                    <span>&ndash; Wrzesień</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="counter counter-horizontal counter-icon">
-                                            <i class="im-clouds text-md"></i>
-                                            <div>
-                                                <h3>Średni wiatr</h3>
-                                                <div class="value">
-                                                    <span class="text-md" data-to="4" data-speed="2000">4</span>
-                                                    <span>&ndash;5 B&nbsp;(Beaufort)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr class="space-sm" />
-                        <hr class="space-xs" />
-                        <a href="treks.html" class="btn btn-sm btn-circle" data-anima="fade-left" data-time="3000">Nasze kursy</a>
-                        <a href="contacts.html" class="btn btn-sm btn-circle btn-border" data-anima="fade-left" data-time="3000">Kontakt</a>
-                    </div>
-                    <div class="col-lg-5 align-right align-left-md">
-                        <hr class="space visible-md" />
-                        <ul class="slider" data-options="type:slider,perView:1,nav:true,autoplay:3500,controls:out" data-anima="fade-right" data-time="2000">
-                            <li>
-                                <a class="img-box" href="shelters.html">
-                                    <img class="width-415" src="media/czorsztyn_lake.svg" alt="Jezioro Czorsztyńskie" />
-                                </a>
-                                <hr class="space" />
-                                <h3 class="text-black text-uppercase">Jezioro Czorsztyńskie</h3>
-                                <p class="no-margin">Przystań Vito – w cieniu zamku Dunajec</p>
-                            </li>
-                            <li>
-                                <a class="img-box" href="shelters.html">
-                                    <img class="width-415" src="media/mucharskie_lake.svg" alt="Jezioro Mucharskie" />
-                                </a>
-                                <hr class="space" />
-                                <h3 class="text-black text-uppercase">Jezioro Mucharskie</h3>
-                                <p class="no-margin">Przystań Leniówka – idealne warunki do nauki</p>
-                            </li>
-                            <li>
-                                <a class="img-box" href="shelters.html">
-                                    <img class="width-415" src="media/roznowskie_lake.svg" alt="Jezioro Rożnowskie" />
-                                </a>
-                                <hr class="space" />
-                                <h3 class="text-black text-uppercase">Jezioro Rożnowskie</h3>
-                                <p class="no-margin">Port Znamirowice – największy akwen kursu</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="space-lg" />
-                <hr class="space hidden-sm" />
-            </div>
-        </section>
-
-        <section class="section-base section-color section-call">
-            <div class="container">
-                <div class="cnt-box cnt-call">
-                    <i class="im-paper-plane"></i>
-                    <div class="caption">
-                        <h2>Zapisz się na kurs!</h2>
-                        <p>
-                            Nie czekaj – miejsca na kursy żeglarskie w sezonie 2026 rozchodzą się błyskawicznie. Skontaktuj się z nami już dziś!
-                        </p>
-                        <a href="contacts.html" class="btn btn-xs">Kontakt</a>
-                    </div>
-                </div>
-                <ul class="slider" data-options="type:carousel,arrows:true,perView:4,perViewMd:3,perViewSm:2,perViewXs:1,gap:30,controls:out,autoplay:3000">
-                    <li>
-                        <a class="img-box lightbox img-box-caption" href="media/sup.jpg" data-lightbox-anima="fade-left">
-                            <img src="media/sup.jpg" alt="Deski SUP">
-                            <span>Deski SUP</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-box lightbox img-box-caption" href="media/ognisko.jpg" data-lightbox-anima="fade-left">
-                            <img src="media/ognisko.jpg" alt="Ognisko przy jeziorze">
-                            <span>Ognisko przy jeziorze</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-box lightbox img-box-caption" href="media/czorsztyn.jpg" data-lightbox-anima="fade-left">
-                            <img src="media/czorsztyn.jpg" alt="Jezioro Czorsztyńskie">
-                            <span>Jezioro Czorsztyńskie</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-box lightbox img-box-caption" href="media/vr.jpg" data-lightbox-anima="fade-left">
-                            <img src="media/vr.jpg" alt="Program VR">
-                            <span>Program VR</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-box lightbox img-box-caption" href="media/regaty.jpg" data-lightbox-anima="fade-left">
-                            <img src="media/regaty.jpg" alt="Mini regaty">
-                            <span>Mini regaty</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-base">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="title">
-                            <h2>O nas</h2>
-                            <p>Żeglujemy z pasją od lat</p>
-                        </div>
-                        <hr class="space-xs" />
-                        <p>
-                            Sailspot to szkoła żeglarska z wieloletnią tradycją, działająca na trzech malowniczych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim. Nasi doświadczeni instruktorzy z uprawnieniami PZŻ przeprowadzili przez szkolenia setki kursantów – od zupełnych początkujących po zaawansowanych żeglarzy.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 no-margin-md">
-                        <p>
-                            Kursy prowadzimy w małych grupach (max. 8 osób na jacht), co gwarantuje indywidualne podejście do każdego kursanta. Program szkoleniowy jest zgodny z wymogami Polskiego Związku Żeglarskiego i umożliwia zdobycie patentu <strong>Żeglarza Jachtowego</strong> lub <strong>Sternika Jachtowego</strong>.
-                        </p>
-                        <p>
-                            Po zajęciach na wodzie czeka nas wspólne ognisko przy brzegu jeziora, grupowa kolacja i niezapomniane wieczory – bo żeglarstwo to nie tylko sport, to styl życia!
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <ul class="text-list text-list-line line-4">
-                            <li><b>Działamy od</b><hr /><p>2010</p></li>
-                            <li><b>Akweny</b><hr /><p>J. Rożnowskie, Mucharskie, Czorsztyńskie</p></li>
-                            <li><b>Email</b><hr /><p>info@sailspot.pl</p></li>
-                            <li><b>Telefon</b><hr /><p>+48 123 456 789</p></li>
-                            <li><b>Instruktorzy</b><hr /><p>6 uprawnionych instruktorów PZŻ</p></li>
-                            <li><b>Rodzaje kursów</b><hr /><p>4 typy kursów</p></li>
-                            <li><b>Cena od</b><hr /><p>od 450 zł</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-image light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="100" data-image-src="media/program_bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;">
-                        <div style="width:270px;height:270px;background-color:#0281F1;border-radius:60px;display:flex;align-items:center;justify-content:center;">
-                            <svg width="165px" height="197px" viewBox="0 0 170.173328 202.502427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Artboard" transform="translate(-286.5907, -92.2142)" fill="#FFFFFF">
-                                        <path d="M389.817586,92.2141893 L456.764003,248.155554 L286.590675,248.155554 L353.119103,92.2141893 L389.817586,92.2141893 Z M371.677339,135.458244 L335.96396,217.770853 L407.050724,217.770853 L371.677339,135.458244 Z" id="Combined-Shape"></path>
-                                        <polygon id="Path-3" points="286.590675 265.735843 300.472626 294.716616 442.40892 294.716616 456.764003 265.735843"></polygon>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;">
-                            <a href="#" style="display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;border-radius:12px;padding:10px 18px;text-decoration:none;min-width:155px;">
-                                <svg viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                                <div style="line-height:1.2;">
-                                    <div style="font-size:10px;opacity:.8;">Pobierz w</div>
-                                    <div style="font-size:16px;font-weight:600;white-space:nowrap;">App Store</div>
-                                </div>
-                            </a>
-                            <a href="#" style="display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;border-radius:12px;padding:10px 18px;text-decoration:none;min-width:155px;">
-                                <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.64.22.99.13l.07-.04 11.05-6.37-2.38-2.39z" fill="#EA4335"/><path d="M20.47 10.37 17.6 8.72l-2.66 2.37 2.67 2.67 2.86-1.65a1.57 1.57 0 0 0 0-2.74z" fill="#FBBC04"/><path d="M3.18.24a1.56 1.56 0 0 0-.51 1.18v21.16c0 .46.18.88.51 1.18l.06.06 11.85-11.85v-.28z" fill="#4285F4"/><path d="M15.09 12l-11.91 11.9.07.04a1.57 1.57 0 0 0 1.55-.02L17.6 15.3z" fill="#34A853"/></svg>
-                                <div style="line-height:1.2;">
-                                    <div style="font-size:10px;opacity:.8;">Pobierz na</div>
-                                    <div style="font-size:16px;font-weight:600;white-space:nowrap;">Google Play</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="title">
-                            <h2>Aplikacja do nauki</h2>
-                            <p>Ucz się żeglarstwa gdziekolwiek jesteś</p>
-                        </div>
-                        <p><strong>Dostęp do aplikacji jest wliczony w cenę kursu.</strong> Pobierz ją na iOS lub Android i ucz się gdziekolwiek jesteś – w domu, w drodze, na wodzie.</p>
-                        <p>Aplikacja zawiera bazę przykładowych pytań egzaminacyjnych z teorii żeglarskiej, przepisów, meteorologii i nawigacji. Rozwiązuj testy i śledź postępy przed egzaminem.</p>
-                        <p><strong>Cały zakres wiedzy jest w pełni zgodny z oficjalnym programem egzaminacyjnym Polskiego Związku Żeglarskiego.</strong></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-base section-color">
-            <div class="container">
-                <div class="title">
-                    <h2>Nasze kursy</h2>
-                    <p>Wybierz odpowiedni poziom dla siebie</p>
-                </div>
-                <hr class="space-sm" />
-                <div class="grid-list pagination-top-right" data-columns="3" data-columns-md="2" data-columns-sm="1">
-                    <div class="grid-box">
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="intro.html">
-                                <div class="extra-field">od 990 zł</div>
-                                <a href="intro.html" class="img-box"><img src="media/intro.jpg" alt="Intro Żeglarskie" /></a>
-                                <div class="caption">
-                                    <h2>Intro Żeglarskie</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>1–4</span></div>
-                                        <div><span>Grupa</span><span>8</span></div>
-                                        <div><span>Poziom</span><span>Początkujący</span></div>
-                                    </div>
-                                    <p>
-                                        Sprawdź jak czujesz się w żeglarstwie. Zapoznanie z łodzią, wiatrem i jego wplywem na żagle. Świetna przygoda i bezcenne doświadczenie.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Mucharskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 1 500 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="media/zj.jpg" alt="Kurs na patent żeglarza jachtowego" /></a>
-                                <div class="caption">
-                                    <h2>Kurs na patent Żeglarza Jachtowego</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>7</span></div>
-                                        <div><span>Grupa</span><span>8</span></div>
-                                        <div><span>Poziom</span><span>Początkujący</span></div>
-                                    </div>
-                                    <p>
-                                        Intensywny kurs łączący teorię z praktyką na wodzie. Po ukończeniu kursu i zdaniu egzaminu PZŻ otrzymujesz patent żeglarza jachtowego.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Mucharskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
-                                <div class="extra-field">od 1 290 zł</div>
-                                <a href="treks-single.html" class="img-box"><img src="media/doskonalace.jpg" alt="Kurs doskonalący dla żeglarzy" /></a>
-                                <div class="caption">
-                                    <h2>Kurs doskonalący dla żeglarzy</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>3</span></div>
-                                        <div><span>Grupa</span><span>6</span></div>
-                                        <div><span>Poziom</span><span>Żeglarz</span></div>
-                                    </div>
-                                    <p>
-                                        Dla posiadaczy patentu chcących podnieść swoje umiejętności. Zaawansowane manewry i doskonalenie podejścia do kei.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="indywidualne.html">
-                                <div class="extra-field">od 400 zł</div>
-                                <a href="indywidualne.html" class="img-box"><img src="media/1on1.jpg" alt="Zajęcia indywidualne" /></a>
-                                <div class="caption">
-                                    <h2>Zajęcia indywidualne</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Dni</span><span>1</span></div>
-                                        <div><span>Grupa</span><span>1</span></div>
-                                        <div><span>Poziom</span><span>Każdy</span></div>
-                                    </div>
-                                    <p>
-                                        Caly dzien plywania z instruktorem. Indywidualne lekcje pozwalają skupić się dokładnie na tym, czego potrzebujesz – bez kompromisów narzucanych przez grupę.
-                                    </p>
-                                    <div class="bottom-info">
-                                        J. Rożnowskie / Mucharskie / Czorsztyńskie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-pagination">
-                        <ul class="pagination align-center" data-page-items="3" data-page-items-md="2" data-pagination-anima="fade-right"></ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-base">
-            <div class="container">
-                <table class="table table-grid table-border table-6-md">
+                <hr class="space-xs" />
+                <table data-anima="fade-left" data-time="3000" class="table table-grid table-border align-left table-10">
                     <tbody>
                         <tr>
                             <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="im-foot-2"></i>
-                                    <div class="caption">
-                                        <h3>Doświadczeni instruktorzy</h3>
-                                        <p>Wszyscy nasi instruktorzy posiadają uprawnienia PZŻ i wieloletnie doświadczenie na wodzie</p>
+                                <div class="counter counter-horizontal counter-icon">
+                                    <i class="im-cloud-sun text-md"></i>
+                                    <div>
+                                        <h3>Sezon żeglarski</h3>
+                                        <div class="value">
+                                            <span class="text-md">Maj</span>
+                                            <span>&ndash; Wrzesień</span>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="im-icq"></i>
-                                    <div class="caption">
-                                        <h3>Łatwa rejestracja</h3>
-                                        <p>Zadzwoń lub napisz – w 5 minut jesteś zapisany na kurs wymarzonych wakacji</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="im-landscape"></i>
-                                    <div class="caption">
-                                        <h3>Piękne akweny</h3>
-                                        <p>Trzy malownicze jeziora Małopolski – każde inne, każde wyjątkowe</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="im-forest"></i>
-                                    <div class="caption">
-                                        <h3>Ognisko i kolacja</h3>
-                                        <p>Każdy wieczór kończymy przy ognisku z pyszną kolacją przy brzegu jeziora</p>
+                                <div class="counter counter-horizontal counter-icon">
+                                    <i class="im-clouds text-md"></i>
+                                    <div>
+                                        <h3>Średni wiatr</h3>
+                                        <div class="value">
+                                            <span class="text-md" data-to="4" data-speed="2000">4</span>
+                                            <span>&ndash;5 B&nbsp;(Beaufort)</span>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <hr class="space-sm" />
+                <hr class="space-xs" />
+                <a href="treks.html" class="btn btn-sm btn-circle" data-anima="fade-left" data-time="3000">Nasze kursy</a>
+                <a href="contacts.html" class="btn btn-sm btn-circle btn-border" data-anima="fade-left" data-time="3000">Kontakt</a>
             </div>
-        </section>
-    </main>
+            <div class="col-lg-5 align-right align-left-md">
+                <hr class="space visible-md" />
+                <ul class="slider" data-options="type:slider,perView:1,nav:true,autoplay:3500,controls:out" data-anima="fade-right" data-time="2000">
+                    <li>
+                        <a class="img-box" href="shelters.html">
+                            <img class="width-415" src="media/czorsztyn_lake.svg" alt="Jezioro Czorsztyńskie" />
+                        </a>
+                        <hr class="space" />
+                        <h3 class="text-black text-uppercase">Jezioro Czorsztyńskie</h3>
+                        <p class="no-margin">Przystań Vito – w cieniu zamku Dunajec</p>
+                    </li>
+                    <li>
+                        <a class="img-box" href="shelters.html">
+                            <img class="width-415" src="media/mucharskie_lake.svg" alt="Jezioro Mucharskie" />
+                        </a>
+                        <hr class="space" />
+                        <h3 class="text-black text-uppercase">Jezioro Mucharskie</h3>
+                        <p class="no-margin">Przystań Leniówka – idealne warunki do nauki</p>
+                    </li>
+                    <li>
+                        <a class="img-box" href="shelters.html">
+                            <img class="width-415" src="media/roznowskie_lake.svg" alt="Jezioro Rożnowskie" />
+                        </a>
+                        <hr class="space" />
+                        <h3 class="text-black text-uppercase">Jezioro Rożnowskie</h3>
+                        <p class="no-margin">Port Znamirowice – największy akwen kursu</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="space-lg" />
+        <hr class="space hidden-sm" />
+    </div>
+</section>
 
-    <footer class="light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Sailspot</h3>
-                    <p>Szkoła Żeglarska Sailspot – nauka żeglarstwa na pięknych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim.</p>
+<section class="section-base section-color section-call">
+    <div class="container">
+        <div class="cnt-box cnt-call">
+            <i class="im-paper-plane"></i>
+            <div class="caption">
+                <h2>Zapisz się na kurs!</h2>
+                <p>
+                    Nie czekaj – miejsca na kursy żeglarskie w sezonie 2026 rozchodzą się błyskawicznie. Skontaktuj się z nami już dziś!
+                </p>
+                <a href="contacts.html" class="btn btn-xs">Kontakt</a>
+            </div>
+        </div>
+        <ul class="slider" data-options="type:carousel,arrows:true,perView:4,perViewMd:3,perViewSm:2,perViewXs:1,gap:30,controls:out,autoplay:3000">
+            <li>
+                <a class="img-box lightbox img-box-caption" href="media/sup.jpg" data-lightbox-anima="fade-left">
+                    <img src="media/sup.jpg" alt="Deski SUP">
+                    <span>Deski SUP</span>
+                </a>
+            </li>
+            <li>
+                <a class="img-box lightbox img-box-caption" href="media/ognisko.jpg" data-lightbox-anima="fade-left">
+                    <img src="media/ognisko.jpg" alt="Ognisko przy jeziorze">
+                    <span>Ognisko przy jeziorze</span>
+                </a>
+            </li>
+            <li>
+                <a class="img-box lightbox img-box-caption" href="media/czorsztyn.jpg" data-lightbox-anima="fade-left">
+                    <img src="media/czorsztyn.jpg" alt="Jezioro Czorsztyńskie">
+                    <span>Jezioro Czorsztyńskie</span>
+                </a>
+            </li>
+            <li>
+                <a class="img-box lightbox img-box-caption" href="media/vr.jpg" data-lightbox-anima="fade-left">
+                    <img src="media/vr.jpg" alt="Program VR">
+                    <span>Program VR</span>
+                </a>
+            </li>
+            <li>
+                <a class="img-box lightbox img-box-caption" href="media/regaty.jpg" data-lightbox-anima="fade-left">
+                    <img src="media/regaty.jpg" alt="Mini regaty">
+                    <span>Mini regaty</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section-base">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="title">
+                    <h2>O nas</h2>
+                    <p>Żeglujemy z pasją od lat</p>
                 </div>
-                <div class="col-lg-4">
-                    <h3>Kontakt</h3>
-                    <ul class="icon-list icon-line">
-                        <li>Małopolska, Polska</li>
-                        <li>info@sailspot.pl</li>
-                        <li>+48 123 456 789</li>
-                    </ul>
+                <hr class="space-xs" />
+                <p>
+                    Sailspot to szkoła żeglarska z wieloletnią tradycją, działająca na trzech malowniczych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim. Nasi doświadczeni instruktorzy z uprawnieniami PZŻ przeprowadzili przez szkolenia setki kursantów – od zupełnych początkujących po zaawansowanych żeglarzy.
+                </p>
+            </div>
+            <div class="col-lg-4 no-margin-md">
+                <p>
+                    Kursy prowadzimy w małych grupach (max. 8 osób na jacht), co gwarantuje indywidualne podejście do każdego kursanta. Program szkoleniowy jest zgodny z wymogami Polskiego Związku Żeglarskiego i umożliwia zdobycie patentu <strong>Żeglarza Jachtowego</strong> lub <strong>Sternika Jachtowego</strong>.
+                </p>
+                <p>
+                    Po zajęciach na wodzie czeka nas wspólne ognisko przy brzegu jeziora, grupowa kolacja i niezapomniane wieczory – bo żeglarstwo to nie tylko sport, to styl życia!
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <ul class="text-list text-list-line line-4">
+                    <li><b>Działamy od</b><hr /><p>2010</p></li>
+                    <li><b>Akweny</b><hr /><p>J. Rożnowskie, Mucharskie, Czorsztyńskie</p></li>
+                    <li><b>Email</b><hr /><p>{{ site.email }}</p></li>
+                    <li><b>Telefon</b><hr /><p>{{ site.phone }}</p></li>
+                    <li><b>Instruktorzy</b><hr /><p>6 uprawnionych instruktorów PZŻ</p></li>
+                    <li><b>Rodzaje kursów</b><hr /><p>4 typy kursów</p></li>
+                    <li><b>Cena od</b><hr /><p>od 450 zł</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-image light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="100" data-image-src="media/program_bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;">
+                <div style="width:270px;height:270px;background-color:#0281F1;border-radius:60px;display:flex;align-items:center;justify-content:center;">
+                    <svg width="165px" height="197px" viewBox="0 0 170.173328 202.502427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Artboard" transform="translate(-286.5907, -92.2142)" fill="#FFFFFF">
+                                <path d="M389.817586,92.2141893 L456.764003,248.155554 L286.590675,248.155554 L353.119103,92.2141893 L389.817586,92.2141893 Z M371.677339,135.458244 L335.96396,217.770853 L407.050724,217.770853 L371.677339,135.458244 Z" id="Combined-Shape"></path>
+                                <polygon id="Path-3" points="286.590675 265.735843 300.472626 294.716616 442.40892 294.716616 456.764003 265.735843"></polygon>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
-                <div class="col-lg-4">
-                    <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a class="facebook"><i class="icon-facebook"></i></a>
-                        <a class="instagram"><i class="icon-instagram"></i></a>
+                <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;">
+                    <a href="#" style="display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;border-radius:12px;padding:10px 18px;text-decoration:none;min-width:155px;">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        <div style="line-height:1.2;">
+                            <div style="font-size:10px;opacity:.8;">Pobierz w</div>
+                            <div style="font-size:16px;font-weight:600;white-space:nowrap;">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" style="display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;border-radius:12px;padding:10px 18px;text-decoration:none;min-width:155px;">
+                        <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.64.22.99.13l.07-.04 11.05-6.37-2.38-2.39z" fill="#EA4335"/><path d="M20.47 10.37 17.6 8.72l-2.66 2.37 2.67 2.67 2.86-1.65a1.57 1.57 0 0 0 0-2.74z" fill="#FBBC04"/><path d="M3.18.24a1.56 1.56 0 0 0-.51 1.18v21.16c0 .46.18.88.51 1.18l.06.06 11.85-11.85v-.28z" fill="#4285F4"/><path d="M15.09 12l-11.91 11.9.07.04a1.57 1.57 0 0 0 1.55-.02L17.6 15.3z" fill="#34A853"/></svg>
+                        <div style="line-height:1.2;">
+                            <div style="font-size:10px;opacity:.8;">Pobierz na</div>
+                            <div style="font-size:16px;font-weight:600;white-space:nowrap;">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="title">
+                    <h2>Aplikacja do nauki</h2>
+                    <p>Ucz się żeglarstwa gdziekolwiek jesteś</p>
+                </div>
+                <p><strong>Dostęp do aplikacji jest wliczony w cenę kursu.</strong> Pobierz ją na iOS lub Android i ucz się gdziekolwiek jesteś – w domu, w drodze, na wodzie.</p>
+                <p>Aplikacja zawiera bazę przykładowych pytań egzaminacyjnych z teorii żeglarskiej, przepisów, meteorologii i nawigacji. Rozwiązuj testy i śledź postępy przed egzaminem.</p>
+                <p><strong>Cały zakres wiedzy jest w pełni zgodny z oficjalnym programem egzaminacyjnym Polskiego Związku Żeglarskiego.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-base section-color">
+    <div class="container">
+        <div class="title">
+            <h2>Nasze kursy</h2>
+            <p>Wybierz odpowiedni poziom dla siebie</p>
+        </div>
+        <hr class="space-sm" />
+        <div class="grid-list pagination-top-right" data-columns="3" data-columns-md="2" data-columns-sm="1">
+            <div class="grid-box">
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-info boxed" data-href="intro.html">
+                        <div class="extra-field">od 990 zł</div>
+                        <a href="intro.html" class="img-box"><img src="media/intro.jpg" alt="Intro Żeglarskie" /></a>
+                        <div class="caption">
+                            <h2>Intro Żeglarskie</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>1–4</span></div>
+                                <div><span>Grupa</span><span>8</span></div>
+                                <div><span>Poziom</span><span>Początkujący</span></div>
+                            </div>
+                            <p>
+                                Sprawdź jak czujesz się w żeglarstwie. Zapoznanie z łodzią, wiatrem i jego wplywem na żagle. Świetna przygoda i bezcenne doświadczenie.
+                            </p>
+                            <div class="bottom-info">
+                                J. Mucharskie / Czorsztyńskie
+                            </div>
+                        </div>
                     </div>
-                    <hr class="space-sm" />
-                    <p>Śledź nas na Facebooku i Instagramie, aby być na bieżąco z terminami kursów i relacjami z rejsów.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 1 500 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="media/zj.jpg" alt="Kurs na patent żeglarza jachtowego" /></a>
+                        <div class="caption">
+                            <h2>Kurs na patent Żeglarza Jachtowego</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>7</span></div>
+                                <div><span>Grupa</span><span>8</span></div>
+                                <div><span>Poziom</span><span>Początkujący</span></div>
+                            </div>
+                            <p>
+                                Intensywny kurs łączący teorię z praktyką na wodzie. Po ukończeniu kursu i zdaniu egzaminu PZŻ otrzymujesz patent żeglarza jachtowego.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Mucharskie / Czorsztyńskie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                        <div class="extra-field">od 1 290 zł</div>
+                        <a href="treks-single.html" class="img-box"><img src="media/doskonalace.jpg" alt="Kurs doskonalący dla żeglarzy" /></a>
+                        <div class="caption">
+                            <h2>Kurs doskonalący dla żeglarzy</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>3</span></div>
+                                <div><span>Grupa</span><span>6</span></div>
+                                <div><span>Poziom</span><span>Żeglarz</span></div>
+                            </div>
+                            <p>
+                                Dla posiadaczy patentu chcących podnieść swoje umiejętności. Zaawansowane manewry i doskonalenie podejścia do kei.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Czorsztyńskie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="cnt-box cnt-box-info boxed" data-href="indywidualne.html">
+                        <div class="extra-field">od 400 zł</div>
+                        <a href="indywidualne.html" class="img-box"><img src="media/1on1.jpg" alt="Zajęcia indywidualne" /></a>
+                        <div class="caption">
+                            <h2>Zajęcia indywidualne</h2>
+                            <div class="cnt-info">
+                                <div><span>Dni</span><span>1</span></div>
+                                <div><span>Grupa</span><span>1</span></div>
+                                <div><span>Poziom</span><span>Każdy</span></div>
+                            </div>
+                            <p>
+                                Caly dzien plywania z instruktorem. Indywidualne lekcje pozwalają skupić się dokładnie na tym, czego potrzebujesz – bez kompromisów narzucanych przez grupę.
+                            </p>
+                            <div class="bottom-info">
+                                J. Rożnowskie / Mucharskie / Czorsztyńskie
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bar">
-            <div class="container">
-                <span>© 2025 Sailspot – Szkoła Żeglarska</span>
-                <span><a href="contacts.html">Kontakt</a> | <a href="#">Polityka prywatności</a></span>
+            <div class="list-pagination">
+                <ul class="pagination align-center" data-page-items="3" data-page-items-md="2" data-pagination-anima="fade-right"></ul>
             </div>
         </div>
-        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
-        <script src="themekit/scripts/parallax.min.js"></script>
-        <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/progress.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
-        <script src="themekit/scripts/pagination.min.js"></script>
-        <script src="themekit/scripts/contact-form/contact-form.js"></script>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
+
+<section class="section-base">
+    <div class="container">
+        <table class="table table-grid table-border table-6-md">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="icon-box icon-box-top align-center">
+                            <i class="im-foot-2"></i>
+                            <div class="caption">
+                                <h3>Doświadczeni instruktorzy</h3>
+                                <p>Wszyscy nasi instruktorzy posiadają uprawnienia PZŻ i wieloletnie doświadczenie na wodzie</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="icon-box icon-box-top align-center">
+                            <i class="im-icq"></i>
+                            <div class="caption">
+                                <h3>Łatwa rejestracja</h3>
+                                <p>Zadzwoń lub napisz – w 5 minut jesteś zapisany na kurs wymarzonych wakacji</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="icon-box icon-box-top align-center">
+                            <i class="im-landscape"></i>
+                            <div class="caption">
+                                <h3>Piękne akweny</h3>
+                                <p>Trzy malownicze jeziora Małopolski – każde inne, każde wyjątkowe</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="icon-box icon-box-top align-center">
+                            <i class="im-forest"></i>
+                            <div class="caption">
+                                <h3>Ognisko i kolacja</h3>
+                                <p>Każdy wieczór kończymy przy ognisku z pyszną kolacją przy brzegu jeziora</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'pl' }}">
+{% include head.html %}
+<body class="page-main">
+    <div id="preloader"></div>
+    {% include nav.html %}
+    {% if page.page_header %}
+    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="0" data-image-src="{{ page.page_header.image }}" data-offset="0">
+        <div class="container">
+            <h1>{{ page.page_header.h1 }}</h1>
+            <h2>{{ page.page_header.h2 }}</h2>
+            <ol class="breadcrumb">
+                {% for crumb in page.breadcrumbs %}
+                <li>{% if crumb.url %}<a href="{{ crumb.url }}">{{ crumb.title }}</a>{% else %}<a href="#">{{ crumb.title }}</a>{% endif %}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </header>
+    {% endif %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</body>
+</html>

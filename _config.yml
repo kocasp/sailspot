@@ -1,0 +1,16 @@
+title: "Sailspot – Szkoła Żeglarska"
+description: "Szkoła Żeglarska Sailspot – kursy żeglarskie na jeziorach Rożnowskim, Mucharskim i Czorsztyńskim."
+email: "info@sailspot.pl"
+phone: "+48 571 999 042"
+address: "Małopolska, Polska"
+copyright_year: "2025"
+
+logo_default: "media/logo_sailspot.png"
+logo_scrolled: "media/logo_sailspot_dark.png"
+logo_transparent: "media/sailspot_outlines_horizontal.png"
+
+maps_api_key: "AIzaSyDl7p8SWg-5kLe7i-usdYCu5m3eVllMDTs"
+
+exclude:
+  - "*.md"
+  - vendor

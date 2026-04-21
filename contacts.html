@@ -1,188 +1,95 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kontakt | Sailspot – Szkoła Żeglarska</title>
-    <meta name="description" content="Skontaktuj się ze Szkołą Żeglarską Sailspot. Zapisy na kursy żeglarskie: info@sailspot.pl, +48 123 456 789.">
-    <script src="themekit/scripts/jquery.min.js"></script>
-    <script src="themekit/scripts/main.js"></script>
-    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="themekit/css/style.css">
-    <link rel="stylesheet" href="themekit/css/glide.css">
-    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
-    <link rel="stylesheet" href="themekit/css/content-box.css">
-    <link rel="stylesheet" href="themekit/css/media-box.css">
-    <link rel="stylesheet" href="themekit/css/contact-form.css">
-    <link rel="stylesheet" href="skin.css">
-    <link rel="icon" href="media/favicon.png">
-</head>
-<body class="page-main">
-    <div id="preloader"></div>
-    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
-        <div class="container">
-            <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="Sailspot logo" />
-                </a>
+---
+layout: default
+title: "Kontakt | Sailspot – Szkoła Żeglarska"
+description: "Skontaktuj się ze Szkołą Żeglarską Sailspot. Zapisy na kursy żeglarskie: info@sailspot.pl, +48 123 456 789."
+use_maps: false
+---
+
+<section class="section-base">
+    <div class="container">
+        <div id="sailspot-map" style="width:100%;height:400px;"></div>
+        <script>
+            function initSailspotMap() {
+                var locations = [
+                    { lat: 49.816642262989056, lng: 19.545624400226004, title: "Przystań Leniówka – J. Mucharskie" },
+                    { lat: 49.441185983418144, lng: 20.290094086864727, title: "Przystań Vito – J. Czorsztyńskie" },
+                    { lat: 49.72733887169212, lng: 20.680832439493287, title: "Port Znamirowice – J. Rożnowskie" }
+                ];
+                var map = new google.maps.Map(document.getElementById("sailspot-map"), {
+                    zoom: 8,
+                    center: { lat: 49.75, lng: 20.15 },
+                    scrollwheel: false
+                });
+                var icon = "media/marker.png";
+                locations.forEach(function(loc) {
+                    new google.maps.Marker({ position: loc, map: map, title: loc.title, icon: icon });
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key={{ site.maps_api_key }}&callback=initSailspotMap" async defer></script>
+        <hr class="space" />
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="title">
+                    <h2>Napisz do nas</h2>
+                    <p>Zapisy, pytania i informacje</p>
+                </div>
+                <form action="https://formspree.io/f/mzdyaejw" class="form-box" method="POST">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Imię i Nazwisko</p>
+                            <input id="name" name="name" placeholder="Imię i Nazwisko" type="text" class="input-text" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Adres e-mail</p>
+                            <input id="email" name="email" placeholder="Twój e-mail" type="email" class="input-text" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Telefon (opcjonalnie)</p>
+                            <input id="phone" name="phone" placeholder="Numer telefonu" type="tel" class="input-text">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Interesuje mnie</p>
+                            <input id="subject" name="subject" placeholder="Kurs patentowy / weekendowy / obóz..." type="text" class="input-text">
+                        </div>
+                    </div>
+                    <p>Wiadomość</p>
+                    <textarea id="message" name="message" class="input-textarea" placeholder="Napisz nam, czym jesteś zainteresowany/a..." required></textarea>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="check" name="check" value="check" required>
+                        <label for="check">Akceptuję politykę prywatności i wyrażam zgodę na przetwarzanie danych osobowych w celu odpowiedzi na wiadomość</label>
+                    </div>
+                    <button class="btn btn-sm" type="submit">Wyślij wiadomość</button>
+                </form>
             </div>
-            <i class="menu-btn"></i>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li class="dropdown">
-                        <a href="#">O nas</a>
-                        <ul>
-                            <li><a href="about.html">O szkole</a></li>
-                            <li><a href="team.html">Kadra</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="treks.html">Kursy</a>
-                        <ul>
-                            <li><a href="treks.html">Wszystkie kursy</a></li>
-                            <li><a href="treks-single.html">Kurs żeglarski – patent</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Informacje</a>
-                        <ul>
-                            <li><a href="prices.html">Cennik</a></li>
-                            <li><a href="events.html">Terminy</a></li>
-                            <li><a href="food.html">Wyżywienie</a></li>
-                            <li><a href="shelters.html">Akweny</a></li>
-                            <li><a href="gallery.html">Galeria</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Kontakt</a></li>
+            <div class="col-lg-4">
+                <div class="title">
+                    <h2>Kontakt</h2>
+                    <p>Dane kontaktowe</p>
+                </div>
+                <ul class="text-list text-list-line">
+                    <li><b>E-mail</b><hr /><p>{{ site.email }}</p></li>
+                    <li><b>Telefon</b><hr /><p>{{ site.phone }}</p></li>
+                    <li><b>Godziny kontaktu</b><hr /><p>Pon–Pt: 9:00–18:00</p></li>
+                </ul>
+                <hr class="space-sm" />
+                <div class="icon-links icon-social icon-links-grid social-colors-hover">
+                    <a class="facebook"><i class="icon-facebook"></i></a>
+                    <a class="instagram"><i class="icon-instagram"></i></a>
+                </div>
+                <hr class="space-sm" />
+                <div class="title">
+                    <h2>Nasze akweny</h2>
+                    <p>Gdzie nas znaleźć</p>
+                </div>
+                <ul class="text-list text-list-line">
+                    <li><b>J. Czorsztyńskie</b><hr /><p>Przystań Vito</p></li>
+                    <li><b>J. Mucharskie</b><hr /><p>Przystań Leniówka</p></li>
+                    <li><b>J. Rożnowskie</b><hr /><p>Port Znamirowice</p></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <main>
-        <section class="section-base">
-            <div class="container">
-                <!-- Mapa – Jezioro Rożnowskie / Czorsztyn area -->
-                <div class="google-map" data-marker="media/marker.png" data-coords="49.7400,20.4900"></div>
-                <hr class="space" />
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="title">
-                            <h2>Napisz do nas</h2>
-                            <p>Zapisy, pytania i informacje</p>
-                        </div>
-                        <form action="themekit/scripts/contact-form/contact-form.php" class="form-box form-ajax" method="post" data-email="info@sailspot.pl">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Imię i Nazwisko</p>
-                                    <input id="name" name="name" placeholder="Imię i Nazwisko" type="text" class="input-text" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <p>Adres e-mail</p>
-                                    <input id="email" name="email" placeholder="Twój e-mail" type="email" class="input-text" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <p>Telefon (opcjonalnie)</p>
-                                    <input id="phone" name="phone" placeholder="Numer telefonu" type="tel" class="input-text">
-                                </div>
-                                <div class="col-lg-6">
-                                    <p>Interesuje mnie</p>
-                                    <input id="subject" name="subject" placeholder="Kurs patentowy / weekendowy / obóz..." type="text" class="input-text">
-                                </div>
-                            </div>
-                            <p>Wiadomość</p>
-                            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="Napisz nam, czym jesteś zainteresowany/a..." required></textarea>
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="check" name="check" value="check" required>
-                                <label for="check">Akceptuję politykę prywatności i wyrażam zgodę na przetwarzanie danych osobowych w celu odpowiedzi na wiadomość</label>
-                            </div>
-                            <button class="btn btn-sm" type="submit">Wyślij wiadomość</button>
-                            <div class="success-box">
-                                <div class="alert alert-success">Wiadomość wysłana! Odpiszemy w ciągu 24 godzin.</div>
-                            </div>
-                            <div class="error-box">
-                                <div class="alert alert-warning">Błąd wysyłania. Proszę spróbować ponownie lub napisać bezpośrednio na info@sailspot.pl</div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="title">
-                            <h2>Kontakt</h2>
-                            <p>Dane kontaktowe</p>
-                        </div>
-                        <ul class="text-list text-list-line">
-                            <li><b>Siedziba</b><hr /><p>Małopolska, Polska</p></li>
-                            <li><b>Strona www</b><hr /><p>sailspot.pl</p></li>
-                            <li><b>E-mail</b><hr /><p>info@sailspot.pl</p></li>
-                            <li><b>Telefon</b><hr /><p>+48 123 456 789</p></li>
-                            <li><b>Godziny kontaktu</b><hr /><p>Pon–Pt: 9:00–18:00</p></li>
-                        </ul>
-                        <hr class="space-sm" />
-                        <div class="icon-links icon-social icon-links-grid social-colors-hover">
-                            <a class="facebook"><i class="icon-facebook"></i></a>
-                            <a class="instagram"><i class="icon-instagram"></i></a>
-                        </div>
-                        <hr class="space-sm" />
-                        <div class="title">
-                            <h2>Nasze akweny</h2>
-                            <p>Gdzie nas znaleźć</p>
-                        </div>
-                        <ul class="text-list text-list-line">
-                            <li><b>J. Czorsztyńskie</b><hr /><p>Przystań Vito, Czorsztyn</p></li>
-                            <li><b>J. Mucharskie</b><hr /><p>KŻ Jaszczur, Świnna Poręba</p></li>
-                            <li><b>J. Rożnowskie</b><hr /><p>Port Znamirowice</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Sailspot</h3>
-                    <p>Szkoła Żeglarska Sailspot – nauka żeglarstwa na pięknych jeziorach Małopolski: Rożnowskim, Mucharskim i Czorsztyńskim.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Kontakt</h3>
-                    <ul class="icon-list icon-line">
-                        <li>Małopolska, Polska</li>
-                        <li>info@sailspot.pl</li>
-                        <li>+48 123 456 789</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="icon-links icon-social icon-links-grid social-colors">
-                        <a class="facebook"><i class="icon-facebook"></i></a>
-                        <a class="instagram"><i class="icon-instagram"></i></a>
-                    </div>
-                    <hr class="space-sm" />
-                    <p>Śledź nas na Facebooku i Instagramie, aby być na bieżąco z terminami kursów i relacjami z rejsów.</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bar">
-            <div class="container">
-                <span>© 2025 Sailspot – Szkoła Żeglarska</span>
-                <span><a href="contacts.html">Kontakt</a> | <a href="#">Polityka prywatności</a></span>
-            </div>
-        </div>
-        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
-        <script src="themekit/scripts/parallax.min.js"></script>
-        <script src="themekit/scripts/glide.min.js"></script>
-        <script src="themekit/scripts/magnific-popup.min.js"></script>
-        <script src="themekit/scripts/contact-form/contact-form.js"></script>
-        <script src='themekit/scripts/maps.min.js'></script>
-        <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDl7p8SWg-5kLe7i-usdYCu5m3eVllMDTs'></script>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
