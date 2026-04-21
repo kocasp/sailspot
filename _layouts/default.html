@@ -5,7 +5,7 @@
     <div id="preloader"></div>
     {% include nav.html %}
     {% if page.page_header %}
-    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080" data-natural-width="1920" data-bleed="0" data-image-src="{{ page.page_header.image }}" data-offset="0">
+    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="{{ page.page_header.natural_height | default: 1080 }}" data-natural-width="{{ page.page_header.natural_width | default: 1920 }}" data-bleed="0" data-image-src="{{ page.page_header.image }}" data-offset="0">
         <div class="container">
             <h1>{{ page.page_header.h1 }}</h1>
             <h2>{{ page.page_header.h2 }}</h2>
